@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mümin Hasanoğlu — UI/UX & Marka Kimliği Tasarımcısı</title>
+  <meta name="description" content="Mümin Hasanoğlu: UI/UX (web & mobil) ve marka kimliği tasarımcısı.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mümin Hasanoğlu — UI/UX & Marka Kimliği Tasarımcısı">
+  <meta property="og:description" content="Cesur, akılda kalıcı dijital deneyimler ve markalar.">
+  <meta name="theme-color" content="#F3EBDD">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pl-count"><span id="plNum">0</span><small>%</small></div>
+    <div class="pl-name">MÜMİN HASANOĞLU</div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span></span></div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#top" class="logo" aria-label="Mümin Hasanoğlu">MH<span>.</span></a>
+    <nav class="nav" id="nav" aria-label="Ana menü">
+      <a href="#work" data-i18n="nav_work">Projeler</a>
+      <a href="#services" data-i18n="nav_services">Hizmetler</a>
+      <a href="#about" data-i18n="nav_about">Hakkımda</a>
+      <a href="#reviews" data-i18n="nav_reviews">Yorumlar</a>
+      <a href="#pricing" data-i18n="nav_pricing">Fiyatlar</a>
+      <a href="#contact" data-i18n="nav_contact">İletişim</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-btn" id="langBtn" type="button" aria-label="Dil / Language">
+        <span data-lang="tr">TR</span><i>/</i><span data-lang="en">EN</span>
+      </button>
+      <button class="burger" id="burger" type="button" aria-label="Menü" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" data-theme="cream">
+      <p class="hero-kicker" data-i18n="hero_kicker">UI/UX & MARKA KİMLİĞİ — 2026</p>
+      <h1 class="hero-title" aria-label="Mümin Hasanoğlu">
+        <span class="hl" data-split aria-hidden="true">MÜMİN</span>
+        <span class="hl hl-2" data-split aria-hidden="true">HASANOĞLU</span>
+      </h1>
+      <div class="hero-bottom">
+        <p class="hero-role" data-i18n="hero_role">Dijital ürünleri ve markaları cesur, net ve akılda kalıcı hale getiren tasarımcı.</p>
+        <a href="#contact" class="btn-magnet" data-magnet data-cursor="hover">
+          <span data-i18n="hero_cta">Projeye başlayalım</span> <b>→</b>
+        </a>
+      </div>
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text><textPath href="#circ">UI/UX • BRANDING • LOGO • IDENTITY • UI/UX • BRANDING • LOGO • </textPath></text>
+        </svg>
+        <span class="badge-star">✺</span>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span data-i18n="scroll">KAYDIR</span><i></i></div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marqueeTrack">
+        <span>UI/UX ✺ BRANDING ✺ LOGO ✺ IDENTITY ✺ MOBILE ✺ WEB ✺ SYSTEMS ✺ </span>
+        <span>UI/UX ✺ BRANDING ✺ LOGO ✺ IDENTITY ✺ MOBILE ✺ WEB ✺ SYSTEMS ✺ </span>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <section class="section work" id="work" data-theme="cream">
+      <div class="sec-head">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title reveal-lines" data-i18n="work_title">SEÇİLİ İŞLER</h2>
+      </div>
+      <div class="filters" role="tablist">
+        <button class="chip is-active" data-filter="all" data-i18n="filter_all" data-cursor="hover">Tümü</button>
+        <button class="chip" data-filter="ux" data-i18n="filter_ux" data-cursor="hover">UI/UX</button>
+        <button class="chip" data-filter="brand" data-i18n="filter_brand" data-cursor="hover">Marka</button>
+      </div>
+      <div class="projects" id="projects"></div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services" data-theme="orange">
+      <div class="sec-head">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title reveal-lines" data-i18n="svc_title">HİZMETLER</h2>
+      </div>
+      <div class="acc">
+        <div class="acc-item is-open">
+          <button class="acc-head" aria-expanded="true" data-cursor="hover"><span class="acc-n">01</span><span data-i18n="svc1_t">UI/UX Tasarım</span><i>+</i></button>
+          <div class="acc-body"><p data-i18n="svc1_d"></p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-head" aria-expanded="false" data-cursor="hover"><span class="acc-n">02</span><span data-i18n="svc2_t">Marka Kimliği</span><i>+</i></button>
+          <div class="acc-body"><p data-i18n="svc2_d"></p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-head" aria-expanded="false" data-cursor="hover"><span class="acc-n">03</span><span data-i18n="svc3_t">Logo Tasarımı</span><i>+</i></button>
+          <div class="acc-body"><p data-i18n="svc3_d"></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS (sticky horizontal scroll) -->
+    <section class="process" id="process" data-theme="orange">
+      <div class="proc-pin">
+        <div class="sec-head">
+          <span class="sec-num">03</span>
+          <h2 class="sec-title reveal-lines" data-i18n="proc_title">SÜREÇ</h2>
+        </div>
+        <div class="proc-track" id="procTrack">
+          <article class="proc-card"><span class="proc-n">01</span><h3 data-i18n="p1_t">Keşif</h3><p data-i18n="p1_d"></p></article>
+          <article class="proc-card"><span class="proc-n">02</span><h3 data-i18n="p2_t">Strateji</h3><p data-i18n="p2_d"></p></article>
+          <article class="proc-card"><span class="proc-n">03</span><h3 data-i18n="p3_t">Tasarım</h3><p data-i18n="p3_d"></p></article>
+          <article class="proc-card"><span class="proc-n">04</span><h3 data-i18n="p4_t">Teslim</h3><p data-i18n="p4_d"></p></article>
+        </div>
+        <div class="proc-bar"><i id="procBar"></i></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" data-theme="cream">
+      <div class="sec-head">
+        <span class="sec-num">04</span>
+        <h2 class="sec-title reveal-lines" data-i18n="about_title">HAKKIMDA</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text reveal" data-i18n="about_text"></p>
+        <div class="stats reveal">
+          <div class="stat"><b data-count="40">0</b><span>+</span><small data-i18n="stat_projects">Tamamlanan proje</small></div>
+          <div class="stat"><b data-count="5">0</b><span>+</span><small data-i18n="stat_years">Yıllık deneyim</small></div>
+          <div class="stat"><b data-count="25">0</b><span>+</span><small data-i18n="stat_clients">Mutlu müşteri</small></div>
+        </div>
+      </div>
+      <h3 class="tl-title reveal" data-i18n="tl_title">DENEYİM</h3>
+      <ol class="timeline">
+        <li class="reveal"><span class="tl-y" data-i18n="tl1_y"></span><div><h4 data-i18n="tl1_t"></h4><p data-i18n="tl1_d"></p></div></li>
+        <li class="reveal"><span class="tl-y" data-i18n="tl2_y"></span><div><h4 data-i18n="tl2_t"></h4><p data-i18n="tl2_d"></p></div></li>
+        <li class="reveal"><span class="tl-y" data-i18n="tl3_y"></span><div><h4 data-i18n="tl3_t"></h4><p data-i18n="tl3_d"></p></div></li>
+      </ol>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews" id="reviews" data-theme="ink">
+      <div class="sec-head">
+        <span class="sec-num">05</span>
+        <h2 class="sec-title reveal-lines" data-i18n="rev_title">MÜŞTERİ YORUMLARI</h2>
+      </div>
+      <div class="rev-track" id="revTrack">
+        <figure class="rev"><blockquote data-i18n="rev1_q"></blockquote><figcaption><b data-i18n="rev1_n"></b><span data-i18n="rev1_r"></span></figcaption></figure>
+        <figure class="rev"><blockquote data-i18n="rev2_q"></blockquote><figcaption><b data-i18n="rev2_n"></b><span data-i18n="rev2_r"></span></figcaption></figure>
+        <figure class="rev"><blockquote data-i18n="rev3_q"></blockquote><figcaption><b data-i18n="rev3_n"></b><span data-i18n="rev3_r"></span></figcaption></figure>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section pricing" id="pricing" data-theme="cream">
+      <div class="sec-head">
+        <span class="sec-num">06</span>
+        <h2 class="sec-title reveal-lines" data-i18n="price_title">FİYAT PAKETLERİ</h2>
+      </div>
+      <div class="plans">
+        <article class="plan reveal" data-tilt>
+          <h3 data-i18n="plan1_n"></h3>
+          <p class="plan-price"><small data-i18n="price_from"></small> <b data-i18n="plan1_p"></b></p>
+          <p class="plan-d" data-i18n="plan1_d"></p>
+          <ul><li data-i18n="plan1_f1"></li><li data-i18n="plan1_f2"></li><li data-i18n="plan1_f3"></li></ul>
+          <a class="btn" data-plan="plan1_n" data-cursor="hover" target="_blank" rel="noopener"><span data-i18n="quote"></span> →</a>
+        </article>
+        <article class="plan plan-featured reveal" data-tilt>
+          <span class="plan-flag" data-i18n="popular"></span>
+          <h3 data-i18n="plan2_n"></h3>
+          <p class="plan-price"><small data-i18n="price_from"></small> <b data-i18n="plan2_p"></b></p>
+          <p class="plan-d" data-i18n="plan2_d"></p>
+          <ul><li data-i18n="plan2_f1"></li><li data-i18n="plan2_f2"></li><li data-i18n="plan2_f3"></li></ul>
+          <a class="btn" data-plan="plan2_n" data-cursor="hover" target="_blank" rel="noopener"><span data-i18n="quote"></span> →</a>
+        </article>
+        <article class="plan reveal" data-tilt>
+          <h3 data-i18n="plan3_n"></h3>
+          <p class="plan-price"><small data-i18n="price_from"></small> <b data-i18n="plan3_p"></b></p>
+          <p class="plan-d" data-i18n="plan3_d"></p>
+          <ul><li data-i18n="plan3_f1"></li><li data-i18n="plan3_f2"></li><li data-i18n="plan3_f3"></li></ul>
+          <a class="btn" data-plan="plan3_n" data-cursor="hover" target="_blank" rel="noopener"><span data-i18n="quote"></span> →</a>
+        </article>
+      </div>
+      <p class="price-note" data-i18n="price_note"></p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" data-theme="red">
+      <div class="sec-head">
+        <span class="sec-num">07</span>
+      </div>
+      <h2 class="hello reveal-lines"><span data-i18n="hello_a">MERHABA</span><span data-i18n="hello_b">DE</span></h2>
+      <p class="contact-text" data-i18n="contact_text"></p>
+      <div class="contact-actions">
+        <a class="btn-magnet btn-ink" id="mailBtn" data-magnet data-cursor="hover"><span data-i18n="contact_mail">E-posta gönder</span> <b>↗</b></a>
+        <a class="btn-magnet btn-cream" id="waBtn" data-magnet data-cursor="hover" target="_blank" rel="noopener"><span data-i18n="contact_wa">WhatsApp'tan yaz</span> <b>↗</b></a>
+      </div>
+      <ul class="socials" id="socials"></ul>
+    </section>
+  </main>
+
+  <footer class="footer" data-theme="red">
+    <a href="#top" class="to-top" data-cursor="hover" data-i18n="up">Yukarı dön ↑</a>
+    <div class="footer-row">
+      <p data-i18n="copy">© 2026 Mümin Hasanoğlu. Tüm hakları saklıdır.</p>
+      <nav class="legal" aria-label="Yasal">
+        <a href="#" class="legal-link" data-cursor="hover" data-i18n="kvkk">KVKK Aydınlatma Metni</a>
+        <a href="#" class="legal-link" data-cursor="hover" data-i18n="privacy">Gizlilik Politikası</a>
+        <a href="#" class="legal-link" data-cursor="hover" data-i18n="cookie">Çerez Politikası</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Project modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" data-close aria-label="Kapat" data-cursor="hover">✕</button>
+      <div class="modal-visual" id="mVisual"></div>
+      <div class="modal-body">
+        <p class="modal-tag" id="mTag"></p>
+        <h3 id="mTitle"></h3>
+        <div class="modal-cols">
+          <section><h4 data-i18n="m_problem">Problem</h4><p id="mProblem"></p></section>
+          <section><h4 data-i18n="m_process">Süreç</h4><p id="mProcess"></p></section>
+          <section><h4 data-i18n="m_solution">Çözüm</h4><p id="mSolution"></p></section>
+          <section><h4 data-i18n="m_result">Sonuç</h4><p id="mResult"></p></section>
+        </div>
+        <h4 data-i18n="m_tools">Araçlar</h4>
+        <ul class="tools" id="mTools"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
